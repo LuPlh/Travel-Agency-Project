@@ -21,10 +21,9 @@ class UI {
             const modal = document.querySelector('.work-modal');
             const modalItem = document.querySelector('.work-modal__item');
             modal.classList.add('work-modal--show');//pour qu'il se montre
-            modalItem.style.backgroundImage = `url(../images/tour-${id}.jpeg)`;
+            modalItem.style.backgroundImage = `url('../images/tour-${id}.jpeg')`;
         }
     }
-
     //closeModal
     closeModal() {
         document.querySelector('.work-modal').classList.remove('work-modal--show');
